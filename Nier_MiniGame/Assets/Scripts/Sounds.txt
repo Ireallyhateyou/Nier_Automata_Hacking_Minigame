@@ -1,0 +1,18 @@
+    16
+    18
+    20
+    21
+    13
+    17 explosion
+    40 money
+    100 73 72 61 51 41 ; lvl up
+    97; lvl up
+    96;lvl up
+    82;lvl up
+    94 71 32; menu
+    92 23; wrong
+    80 + 79 + 69 + 62 + 31 +5glitch
+    75; returninmenu
+    66  call
+    67  39 30menu in glitch
+    64 4 main menu(probably)
