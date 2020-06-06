@@ -10,7 +10,10 @@ public class Hover_On_Buttons : MonoBehaviour, IPointerEnterHandler, IPointerExi
     public TextMeshProUGUI Square;
     public Color BaseColor;
     public Color HoveringColor;
-
+    private void Start() {
+        theText.color = BaseColor; //Or however you do your color
+        Square.color = BaseColor;
+    }
     public void OnPointerEnter(PointerEventData eventData)
     {
         theText.color = HoveringColor; //Or however you do your color
