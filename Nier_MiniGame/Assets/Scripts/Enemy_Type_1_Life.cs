@@ -9,7 +9,8 @@ public class Enemy_Type_1_Life : MonoBehaviour
     public GameObject DeathSound;
     public GameObject Weak_ShockWave;
     public GameObject ExplosionTrail;
-    public GameObject ExplosionCube;
+    public GameObject ExplosionFullCube;
+    public GameObject ExplosionEmptyCube;
     public AudioSource HitSound;
 
 
@@ -32,6 +33,7 @@ public class Enemy_Type_1_Life : MonoBehaviour
     private void OnDestroy() {
         Instantiate(DeathSound, transform.position, transform.rotation);
         Instantiate(ExplosionTrail, transform.position, transform.rotation);
-        Instantiate(ExplosionCube, transform.position, transform.rotation);
+        Instantiate(ExplosionFullCube, transform.position, transform.rotation);
+        Instantiate(ExplosionEmptyCube, transform.position, transform.rotation);
     }
 }

@@ -9,7 +9,8 @@ public class Enemy_Type_2_Life : MonoBehaviour
     public GameObject DeathSound;
     public GameObject Weak_ShockWave;
     public GameObject ExplosionTrail;
-    public GameObject ExplosionCube;
+    public GameObject ExplosionFullCube;
+    public GameObject ExplosionEmptyCube;
     void Update()
     {
         if (Life <= 0)
@@ -28,6 +29,7 @@ public class Enemy_Type_2_Life : MonoBehaviour
     private void OnDestroy() {
         Instantiate(DeathSound, transform.position, transform.rotation);
         Instantiate(ExplosionTrail, transform.position, transform.rotation);
-        Instantiate(ExplosionCube, transform.position, transform.rotation);
+        Instantiate(ExplosionFullCube, transform.position, transform.rotation);
+        Instantiate(ExplosionEmptyCube, transform.position, transform.rotation);
     }
 }

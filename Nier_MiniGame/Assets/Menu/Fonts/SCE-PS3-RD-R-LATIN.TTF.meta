@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 4c4850b7dd5699445996d68f37252930
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SCE-PS3 Rodin LATIN
+  fontNames:
+  - SCE-PS3 Rodin LATIN
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1337474a8f6a8694e9a9ec3edcfd70f8, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

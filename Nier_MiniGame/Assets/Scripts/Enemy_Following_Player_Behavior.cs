@@ -20,7 +20,7 @@ public class Enemy_Following_Player_Behavior : MonoBehaviour
     void Update()
     {
         Enemy = GameObject.FindGameObjectsWithTag("Enemy_Type_2");
-        if (gameObject.name != "Enemy_Type_1" & TouchingPlayer == false &  Enemy.Length == 1)
+        if (TouchingPlayer == false &  Enemy.Length == 0)
         {
           FollowTarget();
         }else
@@ -28,7 +28,6 @@ public class Enemy_Following_Player_Behavior : MonoBehaviour
             transform.LookAt(Target);
         }
     }
-
     void FollowTarget()
     {
         TargetXZ = new Vector3(Target.position.x, gameObject.transform.position.y, Target.position.z);

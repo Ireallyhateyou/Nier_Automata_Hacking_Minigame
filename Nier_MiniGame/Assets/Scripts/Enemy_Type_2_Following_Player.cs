@@ -18,7 +18,7 @@ public class Enemy_Type_2_Following_Player : MonoBehaviour
     }
     void Update()
     {
-        if (gameObject.name != "Enemy_Type_2" & TouchingPlayer == false)
+        if (TouchingPlayer == false)
         {
           FollowTarget();
         }

@@ -125,7 +125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Time_Before_Destruction: 10
-  Projectile_Surface_Hit: {fileID: 0}
+  Projectile_Surface_Hit: {fileID: 2285608381824513469, guid: 29f850e3e49d1c04a95d699f55d632dc,
+    type: 3}
 --- !u!82 &3176644122990765430
 AudioSource:
   m_ObjectHideFlags: 0

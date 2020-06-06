@@ -402,8 +402,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fdc3fad689b76b4e9f56f0d540118b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  Target: {fileID: 0}
+  rb: {fileID: 4225884641771921812}
+  Target: {fileID: 7636202567262605927, guid: c257b75eec105ec4490057515df316b2, type: 3}
   RotationSpeed: 5
   Speed: 2
 --- !u!54 &4225884641771921812
@@ -434,9 +434,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddbbf8f972478694b845b0e8726cf833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PurpleProjectile: {fileID: 0}
-  OrangeProjectile: {fileID: 0}
-  Target: {fileID: 0}
+  PurpleProjectile: {fileID: 3068364206274118152, guid: 669419586e16169408e43d40a843dc68,
+    type: 3}
+  OrangeProjectile: {fileID: 3176644122990765428, guid: 10d16950c8c94e64f9ff63bf0d4873b4,
+    type: 3}
+  Target: {fileID: 7636202567262605927, guid: c257b75eec105ec4490057515df316b2, type: 3}
   Time_Between_Shots: 0.3333
   ProjectileSpeed: 50
   Enemy: []
@@ -453,7 +455,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Life: 1
-  DeathSound: {fileID: 0}
-  Weak_ShockWave: {fileID: 0}
-  ExplosionTrail: {fileID: 0}
-  ExplosionCube: {fileID: 0}
+  DeathSound: {fileID: 4710852909680185853, guid: 57f3fbb7916d4cc4cbab38af0bd5154d,
+    type: 3}
+  Weak_ShockWave: {fileID: 5506881684125082383, guid: 7d5e6be2dfea71048856ae7397ba64f8,
+    type: 3}
+  ExplosionTrail: {fileID: 5959948337863520829, guid: 346df52d27e925a48b5b77028da9e307,
+    type: 3}
+  ExplosionFullCube: {fileID: 9096373756904389907, guid: 3a3373c6cb7e72040b806bde981a2db2,
+    type: 3}
+  ExplosionEmptyCube: {fileID: 1596335000230957381, guid: 8c042f5f28e617a49b03ce62ff632ab4,
+    type: 3}
