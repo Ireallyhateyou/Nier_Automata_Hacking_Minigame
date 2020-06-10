@@ -25,4 +25,6 @@ public class Hover_On_Buttons : MonoBehaviour, IPointerEnterHandler, IPointerExi
         theText.color = BaseColor; //Or however you do your color
         Square.color = BaseColor;
     }
+    
+    
 }
