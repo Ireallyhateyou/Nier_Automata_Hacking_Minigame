@@ -9,12 +9,12 @@
     }
   ],
   "dependencies": {
-	"jp.keijiro.noiseshader": "1.0.0",
     "com.unity.cinemachine": "2.5.0",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.ide.rider": "1.1.4",
     "com.unity.ide.vscode": "1.2.0",
     "com.unity.inputsystem": "1.0.0",
+    "com.unity.postprocessing": "2.3.0",
     "com.unity.probuilder": "4.2.3",
     "com.unity.quicksearch": "1.5.4",
     "com.unity.render-pipelines.high-definition": "7.3.1",
@@ -25,6 +25,7 @@
     "com.unity.ugui": "1.0.0",
     "jp.keijiro.kino.post-processing": "2.1.12",
     "jp.keijiro.kino.post-processing.eight": "1.0.0",
+    "jp.keijiro.noiseshader": "1.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

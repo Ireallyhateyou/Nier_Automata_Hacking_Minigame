@@ -10,6 +10,8 @@ public class Hover_On_Buttons : MonoBehaviour, IPointerEnterHandler, IPointerExi
     public TextMeshProUGUI Square;
     public Color BaseColor;
     public Color HoveringColor;
+    public AudioSource HoverSound;
+
     private void Start() {
         theText.color = BaseColor; //Or however you do your color
         Square.color = BaseColor;
@@ -18,6 +20,7 @@ public class Hover_On_Buttons : MonoBehaviour, IPointerEnterHandler, IPointerExi
     {
         theText.color = HoveringColor; //Or however you do your color
         Square.color = HoveringColor;
+        HoverSound.Play();
     }
 
     public void OnPointerExit(PointerEventData eventData)

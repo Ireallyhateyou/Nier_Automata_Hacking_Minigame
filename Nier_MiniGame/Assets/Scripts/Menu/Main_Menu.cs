@@ -3,22 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.HighDefinition;
+using Kino; 
+ 
 
 public class Main_Menu : MonoBehaviour
 {
+    public Main_Menu S;
     public AudioSource Music;
     public float Time_Before_Scene_Change = 5f;
     public float GlitchIntensity = .5f;
-     public Kino.PostProcessing.Glitch Glitch = null;
+    public Kino.PostProcessing.Glitch Glitch;
+    public AnalogGlitch analogGlitch;
+    public DigitalGlitch digitalGlitch;
+    public VolumeProfile volumeProfile;
+    public float cd = 0.0f;
+    private void Awake() {
+        S = this;
+    }
     private void Start() {
-        PostProcessVolume volume = gameObject.GetComponent<PostProcessVolume>();
-  
+        volumeProfile.TryGet<AnalogGlitch>(out analogGlitch);
+        //volume.GetComponent<Volume>().sharedProfile;
+        //GetComponent<Kino.AnalogGlitch>().colorDrift = cd;
+        //volume.sharedProfile.TryGet<cd>(out Aglitch);
+        //Aglitch = volume.GetComponent<AnalogGlitch>();
+        digitalGlitch = GetComponent<DigitalGlitch>();
+        analogGlitch = GetComponent<AnalogGlitch>();
         
     }
     public void PlayGame()
     {
         StartCoroutine (AudioFadeOut.FadeOut (Music, Time_Before_Scene_Change));
-        GlitchIn();
         Invoke("LoadScene", Time_Before_Scene_Change);
     }
     public void QuitGame()
@@ -27,7 +43,6 @@ public class Main_Menu : MonoBehaviour
     }
     IEnumerator Wait(float waitTime)
     {
-        
         yield return new WaitForSeconds(.1f);
         Debug.Log("wait");
     }
@@ -38,6 +53,6 @@ public class Main_Menu : MonoBehaviour
     private void GlitchIn()
     {
         
-        Glitch.block = new UnityEngine.Rendering.ClampedFloatParameter(.5f, 0f, 1, true);
+
     }
 }
